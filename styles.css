@@ -1,0 +1,77 @@
+/* ----- Global Styles ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*, *:hover {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ----- Variables ----- */
+
+:root {
+
+    /* Colors */
+
+    --dark-color: #333;
+    --white-color: #fafafa;
+    --green: #16bd16;
+    --red: #bd1616;
+
+}
+
+
+/* ----- Main Styles ----- */
+
+.main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 5rem;
+}
+
+#value {
+    font-size: 8rem;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: 2px solid var(--dark-color);
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: var(--white-color);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.btn:hover {
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    transition: all 1s;
+}
